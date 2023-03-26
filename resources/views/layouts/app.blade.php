@@ -75,7 +75,7 @@
         </div>
     </nav>
 
-    @yield('content')
+    {{ $slot }}
 
     <div class="site-footer">
         <div class="container">
