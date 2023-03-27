@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('agents', function (Blueprint $table) {
             $table->id();
+            $table->string('full_name');
+            $table->string('title');
+            $table->string('description');
+            $table->string('photo');
+            $table->string('twitter');
+            $table->string('facebook');
+            $table->string('linkedin');
+            $table->string('instagram');
             $table->timestamps();
         });
     }
