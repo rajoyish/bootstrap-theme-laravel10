@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', HomeController::class);
+Route::get('/', HomeController::class)->name('home');
 
 Route::get('properties', [PropertyController::class, 'index'])->name('properties');
+Route::get('properties/{property}', [PropertyController::class, 'show'])->name('properties.show');
 
 Route::view('services', 'services')->name('services');
 Route::view('about', 'about')->name('about');
