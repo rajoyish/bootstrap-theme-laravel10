@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 
+    @livewireStyles
+
     <title>
         Property &mdash; Free Bootstrap 5 Website Template by Untree.co
     </title>
@@ -197,6 +199,7 @@
     <script src="{{ asset('js/navbar.js') }}"></script>
     <script src="{{ asset('js/counter.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', HomeController::class);
+
+Route::get('properties', [PropertyController::class, 'index'])->name('properties');
 
 Route::view('services', 'services')->name('services');
 Route::view('about', 'about')->name('about');
